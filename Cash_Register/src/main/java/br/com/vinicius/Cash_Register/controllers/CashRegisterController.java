@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Cash-Registers")
+@RequestMapping("/cash_registers")
 @Validated
 public class CashRegisterController {
 
-    private CashRegisterService cashRegisterService;
+    private final CashRegisterService cashRegisterService;
 
     public CashRegisterController(CashRegisterService cashRegisterService) {
         this.cashRegisterService = cashRegisterService;
